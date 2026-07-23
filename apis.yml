@@ -1,7 +1,27 @@
 aid: anchor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anchor.png
 name: Anchor *
-description: 'Anchor * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Anchor was a podcast creation, hosting, distribution, and monetization
+  platform (anchor.fm), founded in 2015 and backed by GV (Google Ventures) among others.
+  Spotify acquired Anchor in 2019 and folded it into its creator tooling, later rebranding
+  the product to Spotify for Podcasters and then Spotify for Creators. The anchor.fm
+  domain now 302-redirects to Spotify''s creator product (podcasters.spotify.com /
+  creators.spotify.com); Anchor never published a standalone public developer API,
+  and it no longer operates as an independent company. This profile was surfaced as
+  a portfolio company of gv and added to the API Evangelist network as a stub lead;
+  enrichment confirms it is an acquired/absorbed brand with no independent developer
+  surface to harvest.'
 url: https://raw.githubusercontent.com/api-evangelist/anchor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +29,21 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: spotify
+x-successor-product: https://podcasters.spotify.com/
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Consumer
+- Podcasting
+- Podcast Hosting
+- Audio
+- Creator Tools
+- Media
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +52,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://anchor.fm
+  url: https://anchor.fm
+- type: DomainSecurity
+  url: security/anchor-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
