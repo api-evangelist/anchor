@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://anchor.fm', status: 302, note: 'declared website redirects to https://creators.spotify.com/ — a different registrable domain (anchor.fm -> spotify.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anchor.png
 name: Anchor *
 description: 'Anchor was a podcast creation, hosting, distribution, and monetization
